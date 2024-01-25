@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey’s</title>
+    <html data-theme="light">
+    <!-- tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom classes -->
+    <script src="https://kit.fontawesome.com/b6533aadd4.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'border-color-primary': 'rgba(19, 19, 24, 0.20)',
+                        'common-peragraph': 'rgba(19, 19, 24, 0.60)',
+                        'background-common-color': 'rgba(19, 19, 24, 0.50)',
+                        'btn-color': '#FF4240',
+
+                    },
+                    backgroundImage: {
+                        'row-1-col-1': "linear-gradient(rgba(19, 19, 24, 0.50) 30%, rgba(19, 19, 24, 0.50) 50%),url('./Images/2.png')",
+                        'row-1-col-2': "linear-gradient(rgba(19, 19, 24, 0.50) 40%, rgba(19, 19, 24, 0.50) 50%),url('./Images/3.png')",
+                        'row-2': "linear-gradient(rgba(19, 19, 24, 0.50) 50%, rgba(19, 19, 24, 0.50) 50%),url('./Images/4.png')"
+                    }
+
+                }
+            }
+        }
+    </script>
+
+    <!-- Google font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-manrope">
+    
+    <header class="mx-5 lg:mx-[135px]">
+
+         <!-- navbar start -->
+         <nav class="my-6">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="pr-4 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="font-extrabold text-2xl lg:text-4xl">
+                        <p>Hockey<span class="text-[#FF4240]">’</span>s</p>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base font-normal text-[#424247]">
+                        <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass hidden lg:block"></i> &nbsp; &nbsp;&nbsp;&nbsp;
+                    <a class="btn bg-[#FF4240] font-bold text-base lg:text-xl text-[#fff] px-4 lg:px-6">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- carousel banner section -->
+        <section class="h-[400px] lg:h-[550px]">
+            <div class="carousel h-full w-full">
+
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full h-[200px] lg:h-full rounded-2xl" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/4 lg:top-1/2">
+                        <a href="#slide2" class="btn btn-circle  border-none bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle  border-none bg-black text-white">❯</a>
+                    </div>
+                    <div
+                        class="w-full lg:w-[500px] bg-[#131318] p-5 lg:p-8 space-y-2 lg:space-y-4 rounded-2xl absolute  top-[220px] lg:top-[360px] lg:right-8">
+                        <h1 class="text-lg lg:text-2xl font-extrabold text-[#fff]">Meet all the heroes from the field
+                        </h1>
+                        <p class="font-medium text-[15px] text-[#fff] leading-6">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                        </p>
+                    </div>
+                </div>
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/slide2.webp" class="w-full h-[200px] lg:h-full rounded-2xl" />
+                    <div
+                        class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/4 lg:top-1/2">
+                        <a href="#slide1" class="btn btn-circle  border-none bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle  border-none bg-black text-white">❯</a>
+                    </div>
+                    <div
+                        class="w-full lg:w-[500px] bg-[#131318] p-5 lg:p-8 space-y-2 lg:space-y-4 rounded-2xl absolute  top-[220px] lg:top-[360px] lg:right-8">
+                        <h1 class="text-lg lg:text-2xl font-extrabold text-[#fff]">Meet all the heroes from the field
+                        </h1>
+                        <p class="font-medium text-[15px] text-[#fff] leading-6">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
